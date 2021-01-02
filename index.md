@@ -25,8 +25,11 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](https://aliya-zee.github.io/hello-world/) and ![Image](src)
+
 ```
+
+[Hello World Link](https://aliya-zee.github.io/hello-world)
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 

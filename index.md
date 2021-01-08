@@ -7,6 +7,4 @@
 
 This will eventually host a complete list of my personal projects. 
 
-For now, however, take a look at my first post - a [text-analytics project](https://github.com/aliya-zee/facebook-analytics/blob/main/Facebook%20Analytics.ipynb) analyzing my own Facebook Messenger data 
-
-
+For now, however, take a look at my first post - a [text-analytics project](https://aliya-zee.github.io/2021/01/07/facebook_analytics) analyzing my own Facebook Messenger data.

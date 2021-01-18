@@ -15,14 +15,14 @@ The data is structured a series of folders, one per thread, and each folder cont
 Before we get into anything too dramatic, let's get a lay of land.
 
 ## First, a quick life history...
-![Image1](https://github.com/aliya-zee/facebook-analytics/blob/main/Blog%20Graphs/Image-1-total-messages.png)
+![Image1](_images/Image-1-total-messages.png)
 
 You can see that I sent my first message in January of 2010, when I was still in high school. Relatively speaking, I was a late adopter of Facebook, but we can see I caught up quickly. I started undergrad at Carnegie Mellon in 2013, from where you can see a steady increase in messaging. Interestingly, I've found that students vary in their preferred communication by college. While most of my friends at CMU preferred Facebook for all communication (to the point where we often never had each others' actual phone numbers) students from other Universities stuck to SMS texting or GroupMe chats. You can actually see this shift after graduation, when I moved to Chicago to start my first full time job, I started interacting with my Chicago over text, and my Facebook message volume declined.
 
 Finally, note Facebook's return in 2020, at the height of the pandemic. My internet communication at that point skyrocketed due to the lockdowns, and you can see the corresponding volume increase in the chart.
 
 ## Other things worth noting
-![Image2](https://github.com/aliya-zee/facebook-analytics/blob/main/Blog%20Graphs/Image-2-total-messages-by-content-type.png)
+![Image2](_images/Image-2-total-messages-by-content-type.png)
 
 Facebook considers any interaction on Messenger as a message. This means that my 613K number above is slighly inflated, since those messages include things like shares from other platforms, voice and video calls, and entries and exits from groupchats. Interestingly, actions such as changing the chat colors also get logged as a seperate message.
 For my analysis, I kept these in, but wiped the messages for things like "Sender X has left the group chat" in order to avoid inflating character counts. Calls were kept in, but there was a negligible amount (460) compared to the total.
@@ -33,25 +33,25 @@ Now for the fun stuff! I spent an unmentionable amount of time digging through t
 ## Sentiment Analysis 
 I used [vaderSentiment](https://pypi.org/project/vaderSentiment/) to score every message and gauge average positive/negative sentiment over time. The chart below shows an average compound score over time. The more positive the number, the more positive the average sentiment is for that given time period (in this case by month). 
 
-![Image3](https://github.com/aliya-zee/facebook-analytics/blob/main/Blog%20Graphs/Image-3-sentiment-scores.png)
+![Image3](_images/Image-3-sentiment-scores.png)
 
 You can see that the first year or so of data is quite volatile. This is due to the relatively small number of messages sent and received. Otherwise, we can also see that I was signficantly more positive in the texts I sent out (in blue) versus the texts I received in return (in orange). This changed as I got older, and adjusted my communication style to match that of my friends. 
 
 ## Profanity
 I also used a package called [better-profanity](https://pypi.org/project/better-profanity/) to scan each message for profane content. This package is extremely thorough and identifies a wide variety of things it considers inappropriate. I found it to have roughly the tolerance of a fifth grade teacher - words like "screwed" and "crap" were also flagged, but overall it was a very interesting metric to dig into it. Here's another chart showing the percentage of messages I've sent and received with profanity contained:
 
-![Image4](https://github.com/aliya-zee/facebook-analytics/blob/main/Blog%20Graphs/Image-4-profanity.png)
+![Image4](_images/Image-4-profanity.png)
 
 I was struck in looking at the data at how perfectly my sent and received curves mirrored each other, so I dug a little deeper. Below you can see the average percent profanity score for my top 50 threads. 
 
-![Image5](https://github.com/aliya-zee/facebook-analytics/blob/main/Blog%20Graphs/Image-5-profanity-by-thread.png)
+![Image5](_images/Image-5-profanity-by-thread.png)
 
 There is a small but noticeable positive correlation here, suggesting that as I interacted with friends with fewer filters, I _adjusted my behavior to match_. 
 
 ## Correlations 
 I was also interested in seeing if certain behaviors for certain senders were highly correlated. By aggregating the data to the sender level and identifying key characteristics, I built the following correlation matrix:
 
-![Image6](https://github.com/aliya-zee/facebook-analytics/blob/main/Blog%20Graphs/Image-6-correlations.png)
+![Image6](_images/Image-6-correlations.png)
 
 This wasn't all that surprising, but you can tell that senders with high GIF usage also tended to use more stickers and send more photos. Unsurprisingly, profanity had a negative correlation with sentiment. However, senders with high profanity usage tended to receive more reacts (the emoji you can assign to a specific message as a reaction). You could definitely argue that profanity at least evokes a strong emotional response!
 

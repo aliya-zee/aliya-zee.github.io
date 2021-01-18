@@ -2,6 +2,7 @@
 title: "Analyzing my Facebook Messenger Data"
 date: 2021-01-07
 tags: facebook EDA analytics
+author: "Aliya"
 ---
 
 Everyone has a unique communication style online. Some of us are online all the time (guilty), some of us not at all. We can chat in short bursts or in long paragraphs, we can use emoji or avoid them altogether. I wanted to take a look at how my own interactions online compared to that of my friends. The following is an analysis I did of my own Facebook Messenger history. If you're interested in the code for this work, take a look at the [full notebook.](https://github.com/aliya-zee/facebook-analytics/blob/main/Facebook%20Analytics.ipynb)

@@ -16,7 +16,7 @@ The data is structured a series of folders, one per thread, and each folder cont
 Before we get into anything too dramatic, let's get a lay of land.
 
 ## First, a quick life history...
-![Image1](/2017-01-07-images/Image-1-total-messages.png)
+<img src="2017-01-07-images/Image-1-total-messages.png">
 
 You can see that I sent my first message in January of 2010, when I was still in high school. Relatively speaking, I was a late adopter of Facebook, but we can see I caught up quickly. I started undergrad at Carnegie Mellon in 2013, from where you can see a steady increase in messaging. Interestingly, I've found that students vary in their preferred communication by college. While most of my friends at CMU preferred Facebook for all communication (to the point where we often never had each others' actual phone numbers) students from other Universities stuck to SMS texting or GroupMe chats. You can actually see this shift after graduation, when I moved to Chicago to start my first full time job, I started interacting with my Chicago over text, and my Facebook message volume declined.
 

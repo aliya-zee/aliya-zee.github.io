@@ -2,7 +2,7 @@
 title: "Quantifying Friendship"
 date: 2021-01-27
 tags: facebook EDA analytics
-author: facebook EDA analytics
+author: Aliya
 ---
 
 Continuing my previous post on analyzing Facebook Messenger data... We're about to get a little bit more personal! My last entry focused on macro-level EDA - things like overall chat volume and sentiments, comparing different behaviors in different threads, and finding correlations. For this post, I've decided to pivot and focus on just one person to see if I can find any fun insights on our friendship over time.

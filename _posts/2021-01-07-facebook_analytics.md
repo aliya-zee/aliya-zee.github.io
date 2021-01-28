@@ -37,7 +37,7 @@ I used [vaderSentiment](https://pypi.org/project/vaderSentiment/) to score every
 
 ![Image3]({{site.url}}/assets/facebook-data/image-3-sentiment-scores.png)
 
-You can see that the first year or so of data is quite volatile. This is due to the relatively small number of messages sent and received. Otherwise, we can also see that I was signficantly more positive in the texts I sent out (in blue) versus the texts I received in return (in orange). This changed as I got older, and adjusted my communication style to match that of my friends.
+You can see that the first year or so of data is quite volatile. This is due to the relatively small number of messages sent and received. Otherwise, we can also see that I was signficantly more positive in the texts I sent out (in orange) versus the texts I received in return (in blue). This changed as I got older, and adjusted my communication style to match that of my friends.
 
 ## Profanity
 I also used a package called [better-profanity](https://pypi.org/project/better-profanity/) to scan each message for profane content. This package is extremely thorough and identifies a wide variety of things it considers inappropriate. I found it to have roughly the tolerance of a fifth grade teacher - words like "screwed" and "crap" were also flagged, but overall it was a very interesting metric to dig into it. Here's another chart showing the percentage of messages I've sent and received with profanity contained:

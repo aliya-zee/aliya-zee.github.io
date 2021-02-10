@@ -1,4 +1,5 @@
 ---
+{% include analytics.html %}
 ---
 
 

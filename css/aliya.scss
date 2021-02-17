@@ -84,6 +84,11 @@ header{
       background-color: blue;
       padding: 2rem;
       transition: $sprint;
+      img{
+        @media screen and (max-width: 40em) {
+          width: 50%;
+        }
+      }
     }
     .description{
       color: $text-color;
@@ -93,6 +98,9 @@ header{
         font-size: 1.5rem;
         font-weight: $base-font-weight-black;
         margin-bottom: 0;
+        @media screen and (max-width: 40em) {
+          line-height: 1.2;
+        }
       }
     }
     &:hover{

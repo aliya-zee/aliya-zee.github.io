@@ -11,6 +11,11 @@ $aliya-navy: #243A63;
 $light-grey: #eaeaea;
 
 $pill-radius: 400px;
+$recessed-shadow: 0px 10px 33px -10px;
+
+$sprint: all 0.20s ease-in-out;
+$run: all 0.30s ease-in-out;
+$jog: all 0.50s ease-in-out;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 $lato-regular: 400;
@@ -78,6 +83,27 @@ header{
       border-radius: 30px;
       background-color: blue;
       padding: 2rem;
+      transition: $sprint;
+    }
+    .description{
+      color: $text-color;
+      margin-top: 1rem;
+      padding: 0 1rem;
+      .post-title{
+        font-size: 1.5rem;
+        font-weight: $base-font-weight-black;
+        margin-bottom: 0;
+      }
+    }
+    &:hover{
+      .image-container{
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-box-shadow: $recessed-shadow rgba($aliya-navy,0.75);
+        -moz-box-shadow: $recessed-shadow rgba($aliya-navy,0.75);
+        box-shadow: $recessed-shadow rgba($aliya-navy,0.75);
+      }
     }
   }
 }

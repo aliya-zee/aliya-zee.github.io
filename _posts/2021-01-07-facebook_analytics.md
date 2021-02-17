@@ -4,6 +4,8 @@ title: "10 Years of Chat History on Facebook"
 date: 2021-01-07
 tags: facebook EDA analytics
 author: "Aliya"
+tile-image: "fb"
+tile-color: "linear-gradient(90deg, rgba(0,153,255,1) 0%, rgba(160,51,255,1) 60%, rgba(255,82,128,1) 90%, rgba(255,112,97,1) 100%);"
 ---
 
 Everyone has a unique communication style online. Some of us are online all the time (guilty), some of us not... not so much. We can chat in short bursts or in long paragraphs, we can use emoji or avoid them altogether. I wanted to take a look at how my own interactions online compared to my friends. With this goal in mind, I dove into some of my data found through Facebook, and pulled some of the most interesting findings to share here. If you're interested in the code for this work, take a look at the [full notebook.](https://github.com/aliya-zee/facebook-analytics/blob/main/Facebook%20Analytics.ipynb)

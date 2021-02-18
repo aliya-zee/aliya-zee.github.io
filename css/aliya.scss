@@ -17,7 +17,7 @@ $sprint: all 0.20s ease-in-out;
 $run: all 0.30s ease-in-out;
 $jog: all 0.50s ease-in-out;
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&display=swap');
 $lato-regular: 400;
 $lato-black: 900;
 
@@ -58,6 +58,7 @@ header{
     padding: 0.25rem 1rem;
     border-radius: $pill-radius;
     color: $text-color;
+    transition: $sprint;
     &:hover{
       background-color: rgba($aliya-navy,10%);
     }
@@ -77,6 +78,7 @@ footer{
     border-radius: $pill-radius;
     font-weight: $base-font-weight-black;
     color: $text-color;
+    transition: $sprint;
     &:hover{
       background-color: rgba($aliya-navy,10%);
     }

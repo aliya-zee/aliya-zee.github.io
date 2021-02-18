@@ -4,6 +4,8 @@ title: "Applying NLP Techniques to Facebook Messenger Data"
 date: 2021-02-01
 tags: facebook EDA analytics NLP
 author: "Aliya"
+tile-image: "fb"
+tile-color: "linear-gradient(90deg, rgba(251,170,29,1) 0%, rgba(253,213,62,1) 100%);"
 ---
 
 As the the third and final post in my series on Facebook Messenger analytics (see parts [one]({% post_url 2021-01-07-facebook_analytics %}) and [two]({% post_url 2021-01-27-facebook-deep-dive %})), I wanted to dig a little deeper into the actual content of the messages contained in my dataset. Besides the sentiment analysis and profanity tracking I had already looked into previously, I wanted to see if implementing some more advanced methods could yield any interesting results.

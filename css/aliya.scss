@@ -102,7 +102,7 @@ footer{
 
 .projects{
   .tile{
-    margin-top: 3rem;
+    margin-top: 4rem;
     .image-container{
       text-align: center;
       border-radius: 30px;
@@ -128,14 +128,24 @@ footer{
         background-repeat: no-repeat;
         background-size: 0% 0.8rem;
         transition: background-size 0.2s;
-        // padding-left: 5px;
-        // padding-right: 5px;
         &:focus{
           background-size: 100% 15px;
         }
         @media screen and (max-width: 40em) {
           line-height: 1.2;
         }
+      }
+      .post-title-wrapper{
+        margin-bottom: 0;
+      }
+      .excerpt{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin-bottom: 0.5rem;
+      }
+      .post-meta{
+        font-style: italic;
+        color: rgba($aliya-navy,70%);
       }
 
     }

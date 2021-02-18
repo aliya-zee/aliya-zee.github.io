@@ -16,7 +16,8 @@ layout: default
         </div>
         <div class="description">
 
-          <p><span class="post-title">{{ post.title }}</span></p>
+          <p class="post-title-wrapper"><span class="post-title">{{ post.title }}</span></p>
+          <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 100 }}</p>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         </div>
       </div>
@@ -25,4 +26,4 @@ layout: default
   {% endfor %}
 </section>
 
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

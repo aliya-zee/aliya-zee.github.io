@@ -110,6 +110,7 @@ footer{
       padding: 2rem;
       transition: $sprint;
       img{
+        // transition: $sprint; //Maintain Img Size Concept
         @media screen and (max-width: 40em) {
           width: 50%;
         }
@@ -152,6 +153,9 @@ footer{
     &:hover{
       .image-container{
         transform: scale(1.05);
+        img{
+          // transform: scale(0.95);//Maintain Img Size Concept
+        }
       }
       .post-title{
         background-size: 100% 0.8rem;

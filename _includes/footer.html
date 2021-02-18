@@ -5,13 +5,14 @@
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
 
-    <nav class="cell shrink">
+    <nav class="cell shrink grid-x">
+      <a class="nav-item cell shrink" href="{{ prepend: site.baseurl }}">
+          Home
+      </a>
       {% for my_page in site.pages %}
         {% if my_page.title %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
-          <div class="nav-item">
-            {{ my_page.title }}
-          </div>
+        <a class="nav-item cell shrink" href="{{ my_page.url | prepend: site.baseurl }}">
+          {{ my_page.title }}
         </a>
         {% endif %}
       {% endfor %}

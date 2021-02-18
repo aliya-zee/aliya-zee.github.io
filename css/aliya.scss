@@ -65,8 +65,24 @@ header{
 }
 
 footer{
-  margin: 2rem 0rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  .site-title{
+    color: $text-color;
+    font-weight: $base-font-weight-black;
+  }
+  .nav-item{
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+    border-radius: $pill-radius;
+    font-weight: $base-font-weight-black;
+    color: $text-color;
+    &:hover{
+      background-color: rgba($aliya-navy,10%);
+    }
+  }
   .copyright{
+    margin-top: 1rem;
     text-align: center;
   }
 }

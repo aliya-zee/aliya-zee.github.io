@@ -12,7 +12,7 @@ Continuing my previous post on analyzing Facebook Messenger data... We're about 
 
 ## The backstory
 
-Meet Sender_6. Sender_6 is a college friend, someone I've known since the very first day I set foot on Carnegie Mellon's campus in 2013. We hit it off during orientation, when he grilled me on my life choices, judged my character flaws mercilously, and flooded me with film trivia that to this day, never stops. (He has graciously agreed to serve as my test subject and allowed me to post this analysis online.)
+Meet `Sender_6`. Sender_6 is a college friend, someone I've known since the very first day I set foot on Carnegie Mellon's campus in 2013. We hit it off during orientation, when he grilled me on my life choices, judged my character flaws mercilously, and flooded me with film trivia that to this day, never stops. (He has graciously agreed to serve as my test subject and allowed me to post this analysis online.)
 
 Let's dive in with a brief timeline overview.
 

@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import 'app';
 @import 'syntax-highlighting';
 
 
@@ -112,7 +112,7 @@ footer{
       transition: $sprint;
       img{
         // transition: $sprint; //Maintain Img Size Concept
-        @media screen and (max-width: 40em) {
+        @include breakpoint(small only) {
           width: 50%;
         }
       }
@@ -133,7 +133,7 @@ footer{
         &:focus{
           background-size: 100% 15px;
         }
-        @media screen and (max-width: 40em) {
+        @include breakpoint(small only) {
           line-height: 1.2;
         }
       }
@@ -174,7 +174,7 @@ footer{
     transition: $sprint;
     img{
       // transition: $sprint; //Maintain Img Size Concept
-      @media screen and (max-width: 40em) {
+      @include breakpoint(small only) {
         width: 50%;
       }
     }
@@ -220,7 +220,7 @@ footer{
       max-width: 150%;
       width: 150%;
       margin: 0 -25%;
-      @media screen and (max-width: 40em) {
+      @include breakpoint(small only) {
         max-width: 100%;
         width: 100%;
         margin: 0;

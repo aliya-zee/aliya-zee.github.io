@@ -15,11 +15,11 @@ TF-IDF (Term Frequency - Inverse Document Frequency) is a way of identifying key
 
 What this looks like in practice is combining all messages for a single sender into one massive string. This string is then treated as a document, with the rest of the thread participants as the other documents in the stack. This approach allows me to identify words unique to a user. Extending my example from earlier, here's a sample of words unique to Sender_6:
 
-![TFIDF-Table1]({{site.url}}/assets/facebook-nlp/image-1-tfidf-sender6.png)
+![TFIDF-Table1](https://aliya-zee.github.io/assets/facebook-nlp/image-1-tfidf-sender6.png)
 
 The table just shows the top 10 words by TF-IDF score, filtered down to words used more that 20 times in total. You can see my name/nickname come up twice, as well as a couple idiosyncracies around slang. Sender_6 uses "aw" while I tend to spell it as "aww", and the same goes for his spelling of "ya" to my "yeah". Mine shows similar patterns:
 
-![TFIDF-Table2]({{site.url}}/assets/facebook-nlp/image-2-tfidf-sender0.png)
+![TFIDF-Table2](https://aliya-zee.github.io/assets/facebook-nlp/image-2-tfidf-sender0.png)
 
 This technique works especially well in groupchats, and could be used as a reliable predictor of identifying a speaker in an anonymous conversation. (Future project idea?)
 
@@ -28,7 +28,7 @@ I also implemented a new tool we learned in class to identify potential topics w
 
 I ran this first on my thread with Sender_6, but the results didn't tell a particularly great story. Most likely, we discuss too many topics within a given day or conversation to point to a reliable prediction. However, on a hunch, I ran this on my longest thread instead. This friend, Sender_2, turned out to have much better results. The output didn't come in a very visually appealing format, but the results are still compelling:
 
-![Top2Vec]({{site.url}}/assets/facebook-nlp/image-3-top2vec.png)
+![Top2Vec](https://aliya-zee.github.io/assets/facebook-nlp/image-3-top2vec.png)
 
 In more readable terms, Top2Vec identified the following topics:
 * Travel (general)

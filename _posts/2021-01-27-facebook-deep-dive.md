@@ -16,7 +16,7 @@ Meet `Sender_6`. Sender_6 is a college friend, someone I've known since the very
 
 Let's dive in with a brief timeline overview.
 
-![Timeline]({{site.url}}/assets/facebook-deepdive/image-1-timeline.png)
+![Timeline](https://aliya-zee.github.io/assets/facebook-deepdive/image-1-timeline.png)
 
 Given this backstory, I was floored to find out that we didn't text each other over Facebook until 2014. This meant that we either used SMS texting (lame) or didn't text at all (more lame) for up to six months before transfering to Facebook. And anyway clearly we didn't text all that much at that point - under 200 messages a month until the summer. We see our first peak in the summer of 2021 for what we can assume to be two reasons: 1) off-campus lives meant no in-person interaction and 2) I was abroad for much of the summer and physically couldn't send an SMS.
 
@@ -28,17 +28,17 @@ After graduation, we moved to different cities, but stayed in touch! You can see
 
 As mentioned in my previous post, I wanted to do a deeper dive in to the vaderSentiment package and get a better understanding of how it scores different messages. First, let's check the obvious - who's the optimist in the group?
 
-![Sentiment]({{site.url}}/assets/facebook-deepdive/image-2-sentiment.png)
+![Sentiment](https://aliya-zee.github.io/assets/facebook-deepdive/image-2-sentiment.png)
 
 As it happens, both and/or neither of us? It looks like overall we match each other quite well. We both hover around the 0.12 mark for compound score ratings, each taking turns dipping above and below without any major changes.
 
 A few of our most positive messages included:
 
-![Positives]({{site.url}}/assets/facebook-deepdive/image-3-positives.png)
+![Positives](https://aliya-zee.github.io/assets/facebook-deepdive/image-3-positives.png)
 
 And a few of our most negative ones:
 
-![Negatives]({{site.url}}/assets/facebook-deepdive/image-4-negatives.png)
+![Negatives](https://aliya-zee.github.io/assets/facebook-deepdive/image-4-negatives.png)
 
 ## Who's the bigger talker?
 
@@ -50,15 +50,15 @@ In all honesty this is actually a pattern across all of my friendships - I send 
 
 On a more positive note, let's take a look at emoticon. Facebook doesn't store emoji in a usable format so there's not much to say here, but luckily I still prefer to go old school and drop in a ":)" now and then. The data supports this:
 
-![Emoji]({{site.url}}/assets/facebook-deepdive/image-5-emoji.png)
+![Emoji](https://aliya-zee.github.io/assets/facebook-deepdive/image-5-emoji.png)
 
 Sender_6 also prides himself on avoiding profanity altogether. While he might not pass my better-profanity package's fifth-grade-teacher standards, his stats still make me look like an angry sailor by comparison.
 
-![Profanity]({{site.url}}/assets/facebook-deepdive/image-7-profanity.png)
+![Profanity](https://aliya-zee.github.io/assets/facebook-deepdive/image-7-profanity.png)
 
 My last insight was minor but caught both of us off-guard: we barely text on weekends. In retrospect, this makes sense given our office jobs (and my current grad student status), but it's probably not data we should be showing off to future employers.
 
-![Weekdays]({{site.url}}/assets/facebook-deepdive/image-6-dayofweek.png)
+![Weekdays](https://aliya-zee.github.io/assets/facebook-deepdive/image-6-dayofweek.png)
 
 ## Conclusion
 

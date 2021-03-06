@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-{% include head.html %}
+<html>
 
-  <body>
+  {% include head.html %}
 
-    <div class="wrapper">
-      {% include header.html %}
+  <body class="grid-container">
 
-      <section>
-      {{ content }}
-      </section>
+    {% include header.html %}
 
-      {% include footer.html %}
+    <div class="page-content grid-x align-center">
+      <div class="wrapper cell small-12 medium-6">
+        {{ content }}
+      </div>
     </div>
 
+    {% include footer.html %}
     {% include foot.html %}
+
+
   </body>
+
 </html>

@@ -1,6 +1,26 @@
-<footer>
-  {% if site.github.is_project_page %}
-  <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-  {% endif %}
-  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+<footer class="grid-x align-center">
+  <div class="grid-x cell small-12 medium-6">
+
+    <div class="cell auto">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+
+    <nav class="cell shrink grid-x">
+      <a class="nav-item cell shrink" href="{{ prepend: site.baseurl }}">
+          Home
+      </a>
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <a class="nav-item cell shrink" href="{{ my_page.url | prepend: site.baseurl }}">
+          {{ my_page.title }}
+        </a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+    <div class="cell copyright">
+      copyright © {{ 'now' | date: "%Y" }} Aliya Zhdanov
+    </div>
+
+  </div>
 </footer>

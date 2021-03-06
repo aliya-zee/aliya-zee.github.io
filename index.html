@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="site-intro">
+  <h1>Welcome!</h1>
+  <p>Feel free to look around. So you two dig up, dig up dinosaurs? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.</p>
+</section>
+
+<section class="projects">
+  {% for post in site.posts %}
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <div class="tile">
+        <div class="image-container" style="background:{{post.tile-color}}">
+          <img src="assets/thumbnails/{{post.tile-image}}.svg" alt="">
+        </div>
+        <div class="description">
+
+          <p class="post-title-wrapper"><span class="post-title">{{ post.title }}</span></p>
+          <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 100 }}</p>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+      </div>
+    </a>
+
+  {% endfor %}
+</section>
+
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

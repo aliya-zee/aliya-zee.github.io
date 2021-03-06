@@ -1,10 +1,12 @@
 ---
+layout: post
 title: "10 Years of Chat History on Facebook"
 date: 2021-01-07
 tags: facebook EDA analytics
 author: "Aliya"
+tile-image: "fb"
+tile-color: "linear-gradient(90deg, rgba(0,153,255,1) 0%, rgba(160,51,255,1) 60%, rgba(255,82,128,1) 90%, rgba(255,112,97,1) 100%);"
 ---
-
 Everyone has a unique communication style online. Some of us are online all the time (guilty), some of us not... not so much. We can chat in short bursts or in long paragraphs, we can use emoji or avoid them altogether. I wanted to take a look at how my own interactions online compared to my friends. With this goal in mind, I dove into some of my data found through Facebook, and pulled some of the most interesting findings to share here. If you're interested in the code for this work, take a look at the [full notebook.](https://github.com/aliya-zee/facebook-analytics/blob/main/Facebook%20Analytics.ipynb)
 
 ## Data Ingestion
@@ -26,7 +28,7 @@ Finally, note Facebook's return in late 2019, when I was traveling for work and 
 ### Other things worth noting
 ![Image2]({{site.url}}/assets/facebook-data/image-2-total-messages-by-content-type.png)
 
-Facebook considers any interaction on Messenger as a message. This means that my 613K number above is slighly inflated, since those messages include things like shares from other platforms, voice and video calls, and entries and exits from groupchats. 
+Facebook considers any interaction on Messenger as a message. This means that my 613K number above is slighly inflated, since those messages include things like shares from other platforms, voice and video calls, and entries and exits from groupchats.
 
 Interestingly, actions such as changing the chat colors also get logged as a seperate message.
 For my analysis, I kept these in, but wiped the messages for things like "Sender X has left the group chat" in order to avoid inflating character counts. Calls were kept in, but there was a negligible amount (460) compared to the total.
@@ -50,7 +52,7 @@ I was struck in looking at the data at how perfectly my sent and received curves
 
 ![Image5]({{site.url}}/assets/facebook-data/image-5-profanity-by-thread.png)
 
-There is a small but noticeable positive correlation here, suggesting that as I interacted with friends with fewer filters, I _adjusted my behavior to match_. 
+There is a small but noticeable positive correlation here, suggesting that as I interacted with friends with fewer filters, I _adjusted my behavior to match_.
 
 ### Correlations
 I was also interested in seeing if certain behaviors for certain senders were highly correlated. By aggregating the data to the sender level and identifying key characteristics, I built the following correlation matrix:

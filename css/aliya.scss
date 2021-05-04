@@ -67,7 +67,7 @@ header{
     color: $text-color;
     transition: $sprint;
     &:hover{
-      background-color: rgba($aliya-navy,10%);
+      background-color: rgba($aliya-navy,.1);
     }
   }
 }
@@ -87,7 +87,7 @@ footer{
     color: $text-color;
     transition: $sprint;
     &:hover{
-      background-color: rgba($aliya-navy,10%);
+      background-color: rgba($aliya-navy,.1);
     }
   }
   .copyright{
@@ -131,7 +131,7 @@ footer{
         font-size: 1.5rem;
         font-weight: $base-font-weight-black;
         text-decoration: none;
-        background: linear-gradient(rgba($aliya-navy,10%), rgba($aliya-navy,10%));
+        background: linear-gradient(rgba($aliya-navy,.1), rgba($aliya-navy,.1));
         background-position: 0% 100%;
         background-repeat: no-repeat;
         background-size: 0% 0.8rem;
@@ -153,7 +153,7 @@ footer{
       }
       .post-meta{
         font-style: italic;
-        color: rgba($aliya-navy,70%);
+        color: rgba($aliya-navy,.7);
       }
 
     }
@@ -195,7 +195,7 @@ footer{
   .post-meta{
     // font-style: italic;
     font-weight: $base-font-weight-regular;
-    color: rgba($aliya-navy,70%);
+    color: rgba($aliya-navy,.7);
     padding: 0 1rem;
     font-size: 1.6rem;
   }
@@ -219,7 +219,7 @@ footer{
       text-decoration: underline;
       font-style: italic;
       &:hover{
-        background-color: rgba($aliya-blue,10%)
+        background-color: rgba($aliya-blue,.1)
       }
     }
     img{
@@ -235,7 +235,7 @@ footer{
   }
 }
 code{
-  background-color: rgba($aliya-navy,10%);
+  background-color: rgba($aliya-navy,.1);
   border-radius: 4px;
   color: $aliya-navy;
   border: none;

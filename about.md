@@ -8,7 +8,7 @@ permalink: /about/
 
 # Hi I'm Aliya!
 
-I am currently a graduate student at the University of Chicago, pursuing an MS in Data Science. Prior to UChicago, I worked in analytics consulting and specialized in data science and data visualization. Outside of data science, I am a passionate student of architectural history and a dedicated volunteer at PAWS Chicago. 
+I am currently a graduate student at the University of Chicago, pursuing an MS in Data Science. Prior to UChicago, I worked in analytics consulting and specialized in data science and data visualization. Outside of data science, I am a passionate student of architectural history and a dedicated volunteer at [PAWS Chicago](https://www.pawschicago.org/). 
 
 ### Tools & Certs
 * Languages - SQL (certified in 2018), Python, R, Russian, Spanish, German... 

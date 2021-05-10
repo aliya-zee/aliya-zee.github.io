@@ -7,61 +7,51 @@ author: "Aliya"
 tile-image: "fb"
 tile-color: "linear-gradient(90deg, rgba(0,153,255,1) 0%, rgba(160,51,255,1) 60%, rgba(255,82,128,1) 90%, rgba(255,112,97,1) 100%);"
 ---
-Everyone has a unique communication style online. Some of us are online all the time (guilty), some of us not... not so much. We can chat in short bursts or in long paragraphs, we can use emoji or avoid them altogether. I wanted to take a look at how my own interactions online compared to my friends. With this goal in mind, I dove into some of my data found through Facebook, and pulled some of the most interesting findings to share here. If you're interested in the code for this work, take a look at the [full notebook.](https://github.com/aliya-zee/facebook-analytics/blob/main/Facebook%20Analytics.ipynb)
 
-## Data Ingestion
-Facebook has a handy way to download all of your information in one (very) large .zip file. You can find a history of your posts, comments, photos, and messages all in one place. For this analysis, I just focused on Messenger data, which includes all private direct messages and groupchats sent through Facebook.
+Minimum wage has increasingly taken up center stage in American politics. President Biden made a $15.00/hour federal minimum wage a central part of his campaign platform, but actually making it happen now that he has taken office hasn’t been so easy. As of February 25th, the proposal to change the minimum wage policy was struck down by the Senate parliamentarian, all but ensuring that the change will not make it into the final version of the American Rescue Plan. These efforts will likely be postponed and attempted to be passed separately later in the year. 
 
-The data is structured a series of folders, one per thread, and each folder contains one JSON file with all messages. The final master dataset contained a total of **613,195 total messages** across **ten years** of data (starting in 2010) and **897 unique threads**. The full notebook can be found [here](https://github.com/aliya-zee/facebook-analytics/blob/main/Messenger%20Pre-Processing.ipynb).
+At $15.00/hour, the proposed minimum wage would be more than double the current rate of $7.25/hour. The update, according to many on the left, is long overdue. The last time the rate was raised was in 2009, when the Obama administration pitched it as part of similar efforts to boost the nation’s struggling economy. Although many efforts have been made since then to pass further increases in both the House and the Senate, the rate has remained the same.
 
-## Initial EDA
-Before we get into anything too dramatic, let's get a lay of the land.
+To put this policy into perspective, $7.25/hour lands a worker right at the federal poverty line (see note). According to the U.S. Bureau of Labor Statistics, 542,000 Americans were working for $7.25/hour, and 1.3 million were working below the federal minimum (mostly tipped employees). As of 2019, 1 out of every ten Americans lives in poverty.
 
-### First, a quick life story...
+## State Policies
 
-![name of the image](https://aliya-zee.github.io/assets/facebook-data/image-1-total-messages.png)
+To help with this and accommodate for the lack of minimum wage increases at the federal level, many states have taken matters into their own hands. 28 states and territories have raised their local minimum wages, with Washington, D.C leading at $15.00, California at $14.00, and Massachusetts at $13.50. 
+ 
+In fact, after including minimum wage rates at the city level, 9 out of every 10 American workers making minimum wage are actually earning more than $7.25/hour. As of May 2019, legislation that individual states and cities have passed to raise the minimum wage means that the effective average minimum wage in the United States is actually $11.80/hour. 
 
-You can see that I sent my first message in January of 2010, when I was still in high school. Relatively speaking, I was a late adopter of Facebook, but we can see I caught up quickly. I started undergrad at Carnegie Mellon in 2013, from where you can see a steady increase in messaging. Interestingly, I've found that students vary in their preferred communication by college. While most of my friends at CMU preferred Facebook for all communication (to the point where we often never had each others' actual phone numbers), students from other universities stuck to SMS texting or GroupMe chats. You can actually see this shift after graduation, when I moved to Chicago to start my first full time job in 2017. I started interacting with my Chicago friends over text, and my Facebook message volume declined.
+Under Biden’s proposal, the minimum wage would be set at $9.50/hour and then steadily increased over the next four years to $15.00/hour. This means that for a large proportion of minimum wage workers in the U.S. the immediate effects of the policy would be minimal until the federal levels catch up to local standards. The U.S. federal government, having failed to act, has effectively relinquished its responsibility and allowed wage disparities to grow across different states.
 
-Finally, note Facebook's return in late 2019, when I was traveling for work and then in 2020, at the height of the pandemic. My internet communication at that point skyrocketed due to the lockdowns, and you can see the corresponding volume increase in the chart.
+## International Policies
 
-### Other things worth noting
-![Image2](https://aliya-zee.github.io/assets/facebook-data/image-2-total-messages-by-content-type.png)
+The gap is also widening between the U.S. and its counterparts across the world. In order to dig deeper into the comparison between different countries, we leveraged data from the Organisation for Economic Co-Operation and Development, or OECD. The OECD compiles a useful dataset containing the history of almost every country’s federal minimum wage policies over time. Policy structures can vary widely —Canada, for example, eliminated a federal minimum wage in 1996, handing over its authority to set policies to the provinces. Some countries, such as India, have wages set per day instead of per hour. And some countries, such as Austria, have no federal policy at all—opting to set wage requirements through a complex negotiation process that varies by industry. The OECD, therefore, calculates an average federal minimum wage based on these factors, and  adjusts the wage based on purchasing power parity (PPP) using 2017 as the base year. The minimum wage in PPP USD used in the analysis below can be interpreted as how much as the wage a worker would earn in USD, adjusted for the cost of living in the United States in 2017.
 
-Facebook considers any interaction on Messenger as a message. This means that my 613K number above is slighly inflated, since those messages include things like shares from other platforms, voice and video calls, and entries and exits from groupchats.
+We combined this with data from the World Bank to identify factors correlated with minimum wage. Unsurprisingly, developing countries (those with high GDP growth or higher wealth disparities) were more likely to have lower wage rates. By contrast, countries with high urban populations high ease of business scores, and high CO2 emissions also had higher wages. 
+ 
 
-Interestingly, actions such as changing the chat colors also get logged as a seperate message.
-For my analysis, I kept these in, but wiped the messages for things like "Sender X has left the group chat" in order to avoid inflating character counts. Calls were kept in, but there was a negligible amount (460) compared to the total.
+The OECD data also shows us, unequivocally, that the U.S. is falling behind in paying its workers. In 2018, U.S. ranked 16th out of 72 countries with a listed minimum wage. 
+ 
+Just eight years earlier, in 2010, the U.S. ranked 8th on the same list. But while the US federal minimum wage remained unchanged, 42 countries out of 63 listed have increased their effective minimum wage when adjusting for PPP. 
 
-## Findings
-Now for the fun stuff! I spent an unmentionable amount of time digging through the stats of how my friends and I interact.
+When looking at just the G20, every country has raised its minimum wage over the last decade - except for the U.S. The most drastic changes have happened for developing countries. Take Brazil, for example. In 2010, Brazil’s monthly minimum wage was 510 Brazilian reals/month, or $319.28/month in PPP USD. By 2018, that rate was raised to $405.07—a full 27% increase in minimum wage over eight years. With its rapidly growing economy, China went even further - over that same period, China almost doubled its minimum wage rate from $265.67/month to $513.10/month. 
 
-### Sentiment Analysis
-I used [vaderSentiment](https://pypi.org/project/vaderSentiment/) to score every message and gauge average positive/negative sentiment over time. The chart below shows an average compound score by month. The more positive the number, the more positive the average sentiment is for that given time period.
+Of course this change isn’t just happening in developing countries. Every single G7 country has increased its federal minimum wage, often overtaking the U.S. in the process. In the United Kingdom, the OECD estimated that the UK federal minimum wage for 2010 was £956.00/month, or $1,228.39/month in PPP USD (adjusted for currency exchange and cost of living), just below the U.S. rate of $1256.67/month. By 2019, that number was $1,736.13/month, a full 41% increase in eight years, and 38% higher than the U.S.’s current minimum. If there were two workers making minimum wage, one in the U.K., and one in the U.S., the worker in the UK would come home every month with an extra $500 to spend on gas, groceries, and rent.
+ 
 
-![Image3](https://aliya-zee.github.io/assets/facebook-data/image-3-sentiment-scores.png)
+The UK in particular is a helpful benchmark for comparison. Having just completed its separation from the European Union, it is not subject to as many strict regulations and is generally considered to be more fiscally conservative compared to other G20 states such as Germany and France. Biden’s proposal to lift minimum wage to $9.50 in 2021, would put the US into the ballpark of the UK at $1,650/month, still about $100 less per month, but a much more comparable rate.
 
-You can see that the first year or so of data is quite volatile. This is due to the relatively small number of messages sent and received. Otherwise, we can also see that I was signficantly more positive in the texts I sent out (in blue) versus the texts I received in return (in orange). This changed as I got older, and adjusted my communication style to match that of my friends. You could also read this as a personality change. Perhaps, as I grew up, I became a little less naive... Or a little more cynical? Who knows! More interestingly, I'm curious to test the accuracy of these findings; comparing different sentiment analysis tools could be an entirely separate blog post.
+## Conclusion
 
-### Profanity
-I also used a package called [better-profanity](https://pypi.org/project/better-profanity/) to scan each message for profane content. This package is extremely thorough and identifies a wide variety of things it considers inappropriate. I found it to have roughly the tolerance of a fifth grade teacher - words like "screwed" and "crap" were also flagged, but overall it was a great measure of relative profanity across different threads and senders. Here's another chart showing the percentage of messages I've sent and received containing profanity:
+The likelihood of such a policy getting passed through Congress this year is questionable. Despite a number of Democrats asking for a greater increase, the majority of Senators and Representatives still consider the bill to be too drastic to pass in such an uncertain time. However, even Republicans are becoming more open to the idea of making some change to the policy. Earlier this week, Senators Tom Cotton and Mitt Romney introduced legislation modifying Biden’s plan to a more modest increase to $10/hour by 2025. Cotton’s own state, Arkansas, with a minimum wage of $11.00/hour, would be unaffected by these changes. 
 
-![Image4](https://aliya-zee.github.io/assets/facebook-data/image-4-profanity.png)
+These changes reflect the shifting opinion of the greater American population. A recent Reuters/Ipsos poll estimated that 59% (+/- 3% margin) of Americans support an increase to $15.00/hour. While the patchwork of individual state policy addresses some of these constituents, it is clear it is time for US federal policy to catch up to the demands of its citizens. As both developing and peer countries alike continue to pass federal minimum wage increases, the US falls further and further behind. 
 
-I was struck in looking at the data at how perfectly my sent and received curves mirrored each other, so I dug a little deeper. Below you can see the average percent profanity score for my top 50 threads.
+*_Assuming a worker works 40 hours per week, 52 weeks a year, they would be earning an annual income of $15,000. A single person would be slightly above their designated FPL limit of $12,880, but a two-person household would qualify, earning less than the designated $17,420._ 
 
-![Image5](https://aliya-zee.github.io/assets/facebook-data/image-5-profanity-by-thread.png)
+**This was originally published in the [Chicago Analyst](https://chicagoanalyst.com/). 
+Code and methodology used to analyze the data for this piece can be accessed [here](https://github.com/aliya-zee/chianalyst/blob/main/MinWage-EDA.ipynb).**
 
-There is a small but noticeable positive correlation here, suggesting that as I interacted with friends with fewer filters, I _adjusted my behavior to match_.
 
-### Correlations
-I was also interested in seeing if certain behaviors for certain senders were highly correlated. By aggregating the data to the sender level and identifying key characteristics, I built the following correlation matrix:
 
-![Image6](https://aliya-zee.github.io/assets/facebook-data/image-6-correlations.png)
 
-This wasn't all that surprising, but you can tell that senders with high GIF usage also tended to use more stickers and send more photos. Unsurprisingly, profanity had a negative correlation with sentiment. However, senders with high profanity usage tended to receive more reacts (the emoji you can assign to a specific message as a reaction). You could definitely argue that profanity at least evokes a strong emotional response!
 
-## Coming soon
-Future additions to this blog:
-* Deep dive into a single thread and how our friendship has evolved over time
-* NLP applications - TF-IDF, ngrams, and Top2Vec

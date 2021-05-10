@@ -5,7 +5,7 @@ date: 2021-04-09
 tags: politics economics EDA
 author: "Aliya"
 tile-image: "fb"
-tile-color: "linear-gradient(90deg, rgba(0,153,255,1) 0%, rgba(160,51,255,1) 60%, rgba(255,82,128,1) 90%, rgba(255,112,97,1) 100%);"
+tile-color: "linear-gradient(90deg, rgba(0, 255, 100, 1) 0%, rgba(0, 255, 255, 1) 100%)"
 ---
 
 Minimum wage has increasingly taken up center stage in American politics. President Biden made a $15.00/hour federal minimum wage a central part of his campaign platform, but actually making it happen now that he has taken office hasn’t been so easy. As of February 25th, the proposal to change the minimum wage policy was struck down by the Senate parliamentarian, all but ensuring that the change will not make it into the final version of the American Rescue Plan. These efforts will likely be postponed and attempted to be passed separately later in the year. 

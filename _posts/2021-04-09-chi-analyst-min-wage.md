@@ -4,7 +4,7 @@ title: "How the U.S. Measures Up Against Minimum Wages Around the World"
 date: 2021-04-09
 tags: politics economics EDA
 author: "Aliya"
-tile-image: "fb"
+tile-image: "wage"
 tile-color: "linear-gradient(90deg, rgba(0, 255, 100, 1) 0%, rgba(0, 255, 255, 1) 100%)"
 ---
 

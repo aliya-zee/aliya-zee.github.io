@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "How the U.S. Measures Up Against Minimum Wages Around the World"
-date: 2021-04-09
-tags: politics economics EDA
+title: "10 Years of Chat History on Facebook"
+date: 2021-01-07
+tags: facebook EDA analytics
 author: "Aliya"
 tile-image: "fb"
 tile-color: "linear-gradient(90deg, rgba(0,153,255,1) 0%, rgba(160,51,255,1) 60%, rgba(255,82,128,1) 90%, rgba(255,112,97,1) 100%);"
